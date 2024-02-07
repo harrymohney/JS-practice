@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f; 
+  background-color: #f0f; /* Light gray background color */
 }
 
 #board {
@@ -27,10 +27,10 @@ body {
   color: #333; /* Default text color */
 }
 
-.cell .X {
+.cell.X {
   color: #ff0000; /* Red text color for X */
 }
 
-.cell .O {
+.cell.O {
   color: #0000ff; /* Blue text color for O */
 }
