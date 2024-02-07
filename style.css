@@ -1,19 +1,40 @@
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0; /* Light gray background color */
+  background-color: #9370DB; /* Medium purple background color */
 }
 
-#board {
+.container {
+  background-color: #F0F0F0; /* Eggshell or grey background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.score-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-weight: bold;
+}
+
+.board-card {
+  background-color: #F0F0F0; /* Eggshell or grey background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 2px;
-  background-color: #fff; /* White background color for the board */
-  border: 2px solid #000; /* Black border for the board */
-  direction: ltr; /* Ensure left-to-right direction for grid items */
+  border: 4px solid black; /* Bold borders for the game board */
 }
 
 .cell {
@@ -25,13 +46,27 @@ body {
   align-items: center;
   font-size: 36px;
   cursor: pointer;
-  color: #333; /* Default text color */
 }
 
 .cell.X {
-  color: #ff0000; /* Red text color for X */
+  color: #008000; /* Green text color for X */
 }
 
 .cell.O {
-  color: #0000ff; /* Blue text color for O */
+  color: #0000FF; /* Blue text color for O */
+}
+
+.reset {
+  background-color: #FFA07A; /* Light matte red background color */
+  color: black; /* Black text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.reset:hover {
+  background-color: #FF7F50; /* Lighter matte red background color on hover */
 }
