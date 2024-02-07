@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="board" class="board">
-        <!-- Grid for the Tic Tac Toe game -->
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+    <div class="container">
+        <div class="score-container">
+            <p class="score">Score:</p>
+            <p>X: <span id="scoreX" class="score-x">0</span></p>
+            <p>O: <span id="scoreO" class="score-o">0</span></p>
+        </div>
+        <div class="board-card">
+            <div id="board" class="board">
+                <!-- Grid for the Tic Tac Toe game -->
+            </div>
+            <button id="reset" class="reset">Reset</button>
+        </div>
     </div>
-    <div class="score">
-        <p>Score:</p>
-        <p>X: <span class="scoreX">0</span></p>
-        <p>O: <span class="scoreO">0</span></p>
-    </div>
-    <button id="reset" class="reset">Reset</button>
     <script src="script.js"></script>
 </body>
 </html>
+

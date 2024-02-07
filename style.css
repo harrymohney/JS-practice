@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f; /* Light gray background color */
+  background-color: #f0f0f0; /* Light gray background color */
 }
 
 #board {
@@ -13,6 +13,7 @@ body {
   gap: 2px;
   background-color: #fff; /* White background color for the board */
   border: 2px solid #000; /* Black border for the board */
+  direction: ltr; /* Ensure left-to-right direction for grid items */
 }
 
 .cell {
