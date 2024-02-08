@@ -27,7 +27,11 @@ body {
   background-color: #F0F0F0; /* Eggshell or grey background color */
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .board {
   display: grid;
@@ -60,11 +64,11 @@ body {
   background-color: #FFA07A; /* Light matte red background color */
   color: black; /* Black text color */
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .reset:hover {
